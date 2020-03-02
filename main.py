@@ -2,6 +2,7 @@ import tweepy
 import datetime
 import json 
 from textblob import TextBlob
+from tweet_store import TweetStore
 
 file_path = 'api.json'
 
@@ -17,6 +18,8 @@ auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(access_token,access_token_secret)
 
 api = tweepy.API(auth)
+
+store=TweetStore()
 
 class StreamListener(tweepy.StreamListener):
 	def on_status(self,status):
@@ -38,7 +41,9 @@ class StreamListener(tweepy.StreamListener):
 			'profile_image_url':status.user.profile_image_url,
 			'received_at':datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 			}
-			print(tweet_item)
+			
+			store.push(tweet_item)
+			print("Pushed to redis: ",tweet_item)
 
 	def on_error(self,status_code):
 		if status_code==420:
