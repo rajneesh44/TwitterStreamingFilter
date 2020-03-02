@@ -6,16 +6,20 @@ Green, Red and Grey borders are used to show the positive, negative and neutral 
 
 
 ## Data Pipeline
-
-
+![Data Pipeline](/dataPipeline.jpg)
 
 ## Usage
 
 >1. Install [Redis](https://redis.io/)
 >2. Make a twitter account at [Twitter](https://twitter.com/home).
->3. Make a [twitter developer](developer.twitter.com) account, make an app and copy the public and private keys.
->4. Clone the repo by doing ## git clone https://github.com/TwitterStreamingFilter.git
+>3. Make a [twitter developer](https://developer.twitter.com/) account, make an app and copy the public and private keys.
+>4. Clone the repo by doing  git clone https://github.com/rajneesh44/TwitterStreamingFilter.git
 >5. Install the requirements.txt : #pip install requirements.txt
  
+ ```python
+ #run main.py and then application.py
+ python main.py
+ python application.py
+ ```
 
 
