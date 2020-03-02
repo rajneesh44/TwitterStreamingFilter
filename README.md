@@ -6,7 +6,7 @@ Green, Red and Grey borders are used to show the positive, negative and neutral 
 
 
 ## Data Pipeline
-![Data Pipeline](/dataPipeline.jpg)
+![Data Pipeline](/dataPipeline.png)
 
 ## Usage
 
