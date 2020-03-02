@@ -1,10 +1,9 @@
 # TwitterStreamingFilter
-Making a twitter streaming filter using flask and sentiment analysis
-```
->What we are doing is simply creating a twitter filter using sentiment analysis.
+
+>What I am doing is simply creating a twitter filter using sentiment analysis.
  The tweets are fetched using the twitter api, stored in redis database, sentiment analysis is done and then top 15 tweete are displayed using flask and HTML and Jinja.
 Green, Red and Grey borders are used to show the positive, negative and neutral tweets. 
-```
+
 
 ## Data Pipeline
 
