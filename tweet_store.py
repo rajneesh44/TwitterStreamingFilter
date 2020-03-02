@@ -1,5 +1,6 @@
 import json
-import redis 
+import redis
+from tweet import Tweet  
 
 class TweetStore:
 
@@ -35,7 +36,7 @@ class TweetStore:
 
 		for item in self.db.lrange(self.redis_key,0,limit-1):
 			tweet_obj=json.loads(item)
-			tweets.append(tweet_obj)
+			tweets.append(Tweet(tweet_obj))
 
 		return tweets 
 
