@@ -5,7 +5,7 @@
 Flask == 1.1.1
 
 # tweet_store.py: 2
-redis == 3.4.1
+redis == 4.5.3
 
 # main.py: 4
 textblob == 0.15.3
