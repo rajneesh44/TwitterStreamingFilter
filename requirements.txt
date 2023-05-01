@@ -2,7 +2,7 @@
 # https://github.com/damnever/pigar
 
 # application.py: 1
-Flask == 1.1.1
+Flask == 2.3.2
 
 # tweet_store.py: 2
 redis == 3.4.1
